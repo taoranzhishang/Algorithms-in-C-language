@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="project.c">
+    <ClCompile Include="selection_sort.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
