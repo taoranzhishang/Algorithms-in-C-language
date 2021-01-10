@@ -32,8 +32,11 @@ void heapify(int *heap, int length, int parent_node_temp)
 	if (max_node != parent_node_temp)
 	{
 		swap(heap, max_node, parent_node_temp);//子节点与父节点互换
-		heapify(heap, length, max_node);//递归，交换后对下层做调整，使数组为一个完全二叉树,nax_node是子节点的赋予的值
-										//连续递归保证每层子节点小于父节点
+		/*
+		递归，交换后对下层做调整，使数组为一个完全二叉树,nax_node是子节点的赋予的值
+		连续递归保证每层子节点小于父节点
+		*/
+		heapify(heap, length, max_node);
 	}
 }
 /*
