@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #define SIZE 10
+#define T_SIZE 100
 
 void display(int *arr)
 {
@@ -29,7 +30,7 @@ void radix_sort(int *arr)
 	int *sortedArr = (int *)malloc(sizeof(int)*SIZE);
 	while (max / division > 0)
 	{
-		int bucket[100] = { 0 };
+		int bucket[T_SIZE] = { 0 };
 		for (int i = 0; i < SIZE; i++)
 		{
 			bucket[arr[i] / division % 10]++;
